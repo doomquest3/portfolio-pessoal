@@ -1,0 +1,139 @@
+/* CSS da responsividade */
+@media (max-width:768px) {
+    /* Responsividade introdução pessoal */
+    .intro_pessoal{
+        height: 100%;
+    
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0 auto;
+        
+        align-items: center;
+        padding: 8rem 0;
+        border-bottom: 1px solid white;
+
+    }
+
+    /* Revisão texto de introdução */
+    .intro_pessoal p{
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.25rem;
+    
+    }
+
+    /* Título */
+    .title{
+        height: 100%;
+        
+    }
+
+    /* Sesão principal de experiências */
+    .sesao_pessoal{
+        height: 100%;
+    
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 0 auto;
+        
+        gap: 3rem;
+        align-items: center;
+        
+        padding: 8rem 0;
+        border-bottom: 1px solid white;
+    
+    }
+    /* Ajustando lista de experiências pessoais */
+    .sesao_pessoal ul{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 1.5rem;
+        justify-content: center;
+        
+    }
+
+    /* Ajustando o cartão */
+    .cartao{
+        width: 75%;
+        height: 15rem;
+        margin: 0 auto;
+
+    }
+
+    /* --- --- --- --- Sesão sobre as habilidades --- --- --- --- */
+    .sesao_skills{
+        height: 100%;
+        
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 0 auto;
+        gap: 2rem;
+        
+        align-items: center;
+        padding: 8rem 0;
+        border-bottom: 1px solid white;
+
+
+    }
+
+    /* Ajustando lista de habilidades desenvolvidas */
+    .sesao_skills ul{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 2.5rem;
+        justify-content: center;
+
+    }
+
+    /* --- --- --- --- Sesão de projetos pessoais --- --- --- --- */
+    .sesao_projetos{
+        height: 100%;
+
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 0 auto;
+        gap: 2rem;
+
+        padding: 8rem 0;
+        align-items: center;
+
+    }
+
+    .sesao_projetos ul{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 2rem;
+        justify-content: center;
+        
+    }
+
+    .rodape{
+        height: 100%;
+        width: 100%;
+
+        background-color: #3f3f3f;
+
+        display: grid;
+        grid-template-areas: "t"
+                            "a"
+                            "b";
+        grid-template-columns: 100% ;
+        grid-template-rows: 25% 75%;
+
+    }
+
+    .area-titulo{
+        grid-area: t;
+        
+    }
+
+    .area-redeSocial{
+        grid-area: a;
+    }
+
+    .form-email{
+        grid-area: b;
+        
+    }
+
+}

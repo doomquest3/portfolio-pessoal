@@ -8,6 +8,7 @@ body{
 :root{
     --cor1: rgb(70, 54, 211);
     --cor2: rgb(13,110, 253);
+    --cor3: white;
 }
 
 /* Barra de navegação */
@@ -29,68 +30,85 @@ body{
 
 /* Sesão principal de introdução pessoal */
 .intro_pessoal{
-    height: 22.5rem;
-    width: 75%;
+    height: 100vh;
 
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap: 1rem;
+
     align-items: center;
-    
-    margin: 8rem auto;
-    gap: 5rem;
+    justify-content: center;
 
+    padding: 8rem auto;
+    border-bottom: 1px solid white;
+    
+    
 }
 
 /* Div de apresentação de nome e texto rápido */
-.intro_pessoal div{
+.intro{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
+
 }
 
 /* Titulo genérico para todos os títulos do portfólio */
-.title{
-    margin: 0 auto 0.75rem ;
+.title{ 
     width: 75%;
-    font-size: 2rem;
-    font-weight: bolder;
     border-bottom: 1.5px solid var(--cor2);
-
+    
+    padding: 2rem 0;
+    margin: 0 auto;
+    font-weight: bolder;
+    
 }
 
 /* Texto de introdução */
 .intro_pessoal p{
-    width: 90%;
-    font-size: 1.25rem;
+    width: 100%;
+    font-size: 1.125rem;
+    word-wrap: break-word;
 
 }
 
 /* Imagem de perfil */
-.intro_pessoal > img{
-    width: 100%;
-    height: 100%;
+.intro_pessoal img{
+    width: 50%;
+    height: 50%;
 
 }
 
-/* Sesão de experiência pessoal */
+
+/* --- --- --- --- Sesão de experiência pessoal --- --- --- --- */
 .sesao_pessoal{
-    width: 100%;
+    height: 100%;
+
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
+    grid-template-columns: 100%;
     margin: 0 auto;
-    padding: 8rem 0;
-    gap: 3rem;
+    gap: 5rem;
+    align-items: center;
 
+    padding: 8rem 0;
     border-bottom: 1px solid white;
 
 }
 
+.sesao_pessoal ul{
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+    gap: 1.5rem;
+    justify-content: center;
+    
+}
+
 /* Div internas da sesão */
 .cartao{
-    width: 85%;
+    width: 90%;
+    height: 100%;
     border: 0.125rem solid white;
     padding: 0.5rem;
     border-radius: .25rem;
@@ -114,19 +132,56 @@ body{
 
 }
 
-/* Cartão de imagem */
-.card-imagem{
-    max-width: 50%;
+
+/* --- --- --- --- Sesão sobre as habilidades --- --- --- --- */
+.sesao_skills{
     height: 100%;
+
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 0 auto;
+    gap: 5rem;
+    align-items: center;
+
+    padding: 8rem 0;
+    border-bottom: 1px solid white;
+
+
 }
 
-/* Rotapé com redes sociais */
-.rotape{
-    height: 15rem;
-    background-color: #474747;
+.sesao_skills ul{
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 25% 75%;
+    grid-template-columns: repeat(2, 40%);
+    gap: 1.5rem;
+    justify-content: center;
+
+}
+
+/* --- --- --- --- Sesão de projetos pessoais --- --- --- --- */
+.sesao_projetos{
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 0 auto;
+    gap: 5rem;
+    align-items: center;
+
+    padding: 8rem 0;
+
+}
+
+.sesao_projetos ul{
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+    gap: 1.5rem;
+    justify-content: center;
+    
+}
+
+/* Cartão de imagem */
+.card-imagem{
+    width: 25%;
 
 }
 
@@ -144,7 +199,8 @@ body{
     grid-template-rows: 25% 75%;
     
 }
-
+    
+/* Título de rodapé */
 .area-titulo{
     grid-area: t;
     
