@@ -1,15 +1,235 @@
-*{
-    text-decoration: none;
-    list-style: none;
-    margin: 0;
-    padding: 0;
 
-    font-family: 'Times New Roman', Times, serif;
+body{
+    background: #262626;
+    text-align: center;
+
+}
+
+:root{
+    --cor1: rgb(70, 54, 211);
+    --cor2: rgb(13,110, 253);
+}
+
+/* Barra de navegação */
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3.5rem;
+    padding: 0 5rem;
+    background-color: #3f3f3f;
     color: white;
 
 }
 
-body{
-    background: #262626;
+.nav-title{
+    font-size: 1.5rem;
+
+}
+
+/* Sesão principal de introdução pessoal */
+.intro_pessoal{
+    height: 22.5rem;
+    width: 75%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 8rem auto;
+    gap: 5rem;
+
+}
+
+/* Div de apresentação de nome e texto rápido */
+.intro_pessoal div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Titulo genérico para todos os títulos do portfólio */
+.title{
+    margin: 0 auto 0.75rem ;
+    width: 75%;
+    font-size: 2rem;
+    font-weight: bolder;
+    border-bottom: 1.5px solid var(--cor2);
+
+}
+
+/* Texto de introdução */
+.intro_pessoal p{
+    width: 90%;
+    font-size: 1.25rem;
+
+}
+
+/* Imagem de perfil */
+.intro_pessoal > img{
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Sesão de experiência pessoal */
+.sesao_pessoal{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin: 0 auto;
+    padding: 8rem 0;
+    gap: 3rem;
+
+    border-bottom: 1px solid white;
+
+}
+
+/* Div internas da sesão */
+.cartao{
+    width: 85%;
+    border: 0.125rem solid white;
+    padding: 0.5rem;
+    border-radius: .25rem;
+    background-color: #3f3f3f;
+    color: var(--cor2);
     
 }
+
+/* Link do cartão */
+.cartao a{
+    color: var(--cor2);
+
+}
+
+/* Título cartão */
+.cartao h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 0.125rem solid white;
+    color: var(--cor2);
+
+}
+
+/* Cartão de imagem */
+.card-imagem{
+    max-width: 50%;
+    height: 100%;
+}
+
+/* Rotapé com redes sociais */
+.rotape{
+    height: 15rem;
+    background-color: #474747;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 75%;
+
+}
+
+/* Rodapé com as redes sociais */
+.rodape{
+    height: 100%;
+    width: 100%;
+
+    background-color: #3f3f3f;
+
+    display: grid;
+    grid-template-areas: "t t"
+                         "a af";
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 25% 75%;
+    
+}
+
+.area-titulo{
+    grid-area: t;
+    
+}
+
+.area-redeSocial{
+    width: 100%;
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem 0;
+
+}
+
+.area-redeSocial h4{
+    margin: 0 auto 0.75rem ;
+    width: 50%;
+    font-size: 2.25rem;
+    color: var(--cor2);
+
+}
+
+.redes-lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.form-email{
+    grid-area: af;
+    
+}
+
+/* Título das redes sociais */
+.area-titulo h3{
+    width: 50%;
+    border-bottom: 1.5px solid var(--cor2);
+
+}
+
+/* Formulário de email */
+.form-email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    
+}
+
+/* Formulário de email */
+.form-email form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+/* Texto de área de formulário */
+.form-email textarea{
+    color: #262626;
+
+}
+
+/* Botão de envio de email */
+.form-email button{
+   color: #262626;
+   border: none;
+   width: 40%;
+   padding: 1rem 0;
+   font-weight: bolder;
+
+}
+
+/* efeito ao passar o mouse sobre o botão */
+.form-email button:hover{
+    background-color: var(--cor2);
+    color: white;
+    font-weight: bolder;
+
+}
+

@@ -3,67 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- resetar estilos do navegador, criação de estilo próprio do porfólio e responsividade do porfólio -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="stylesheet" href="./css/responsivo.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
 
+    <!-- Script para funcionamento do bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+    <script src="./js/spyOn.js" defer></script>
     <title>Portfolio pessoal - Leandro de Jesus</title>
 </head>
-<body>
     <!-- Barra de navegação -->
-    <nav id="navbar-example2" class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link" href="#introducao">Introdução</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#experiencias">Experiências</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#habilidades">Habilidades</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#projetos">Projetos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#experiencias">Experiências</a>
-            </li>
-        </ul>
-    </nav>
-
+<nav id="navbar-example2" class="navbar ">
+    <a class="nav-title" href="#">Logo</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link " href="#introducao">Introdução pessoal</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#experiencias">Experiências</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#habilidades">Habilidades</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projetos">Projetos pessoais</a>
+      </li>
+    </ul>
+</nav>
+<body>
     <!-- Corpo principal da página -->
-    <main data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-offset="0">
+        <!-- Introdução pessoal -->
+        <section id="introducao" class="intro_pessoal">
+            <div>
+                <h1 class="title">Leandro de Jesus Cavalcante da Silva</h1>
+                <p>
+                Sou um desenvolvedor front-end web, utilizo de conhecimentos intermediários em HTML5, CSS3, JS, TS e Angular para o desenvolvimento de sites sejam pessoais ou para empresas, estou na área a mais de 3 anos estudando, cursei bootcamps, cursos e desenvolvido projetos pessoais que incremente meu conhecimento e experiências na minha área de atuação.
+        
+                </p>
+            </div>
+            <img src="./img/Foto leandro.jpg" alt="Foto de perfil do Leandro de Jesus">
+        </section>
 
-    <!-- Introdução pessoal -->
-    <section id="introducao" class="intro_pessoal">
-        <p>
-           Me chamo Leandro de Jesus Cavalcante da Silva, sou um desenvolvedor front-end, utilizo de conhecimentos intermediários em HTML5, CSS3, JS, TS e Angular para o desenvolvimento de sites
-           sejam pessoais ou para empresas, estou na área a mais de 3 anos estudando, realizando cursos e 
-           projetos pessoais que incremente meu conhecimento e experiências no desenvolvimento.
 
-        </p>
-        <img src="./img/Foto leandro.jpg" alt="Foto de perfil do Leandro de Jesus">
-    </section>
-    <!-- Experiências -->
-    <section id="experiencias">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et harum quod iste magni eveniet delectus pariatur, cumque doloribus voluptatem iure rem. Labore, eveniet? Optio dolorem corrupti vero, quaerat doloremque distinctio!
-    </section>
-    <!-- Habilidades -->
-    <section id="habilidades" >
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla consequatur quibusdam ut autem voluptate unde earum ipsa quidem natus aperiam quae voluptates dolore facilis, velit dolores, quas a tempore at.
-    </section>
-    <!-- Projetos pessoais -->
-    <section id="projetos">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta impedit quia quos nam, accusamus deleniti amet autem recusandae praesentium dolor deserunt dolorum! Fuga modi illum rerum doloremque ab assumenda quidem.
-    </section>
-    <!-- Perfis em redes sociais -->
-    <footer>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae placeat alias vero recusandae laudantium dolorem hic, asperiores nobis maxime, obcaecati, debitis similique. Dolore libero sint eligendi suscipit, officia eum porro.
-    </footer>
+        <!-- Experiências -->
+        <h3 id="experiencias" class="title">Experiências pessoais</h3>
+        <section class="sesao_pessoal">
+            <div class="cartao">
+                <h3>UNIFAP DIGITAL 4.0</h3>
+                <p>
+                    Participei do curso unifap digital 4.0 no qual utilizamos as tecnologias: adonisJS, nextJS e react-native para desenvolver um e-commmerce, dando web e mobile, além de nos introduzir a programação web e desenovlvimento de projetos.
+                    
+                </p>
+            </div>
+            <div class="cartao">
+                <a href="https://www.dio.me/certificate/D2A50F42/share" target="_blank"><h3>Potência Tech Angular Developer - Powered by iFood</h3></a>
+                <p>
+                    Bootcamp de angular no site da DIO, sendo patrocinado pelo ifood, no qual ficamos estudando sobre HTML, CSS, Js, Ts e Angular, além de desevolver sites utilizando o framework para incrementarmos nossa experiência de estudos e conhecimento.
+                    
+                </p>
+            </div>
+            <div class="cartao">
+                <a href="https://www.dio.me/certificate/8F9F9C9C/share" target="_blank"><h3>Potência Tech iFood - Desenvolvimento de Jogos</h3></a>
+                <p>
+                    Bootcamp de desenvolvimento de jogos, patrocinado pelo ifood, no qual estudamos sobre o desenvolvimento de jogos, lógica de programação e revisão de conhecimentos utilizados, no qual 
+                    
+                </p>
+            </div>
+            <div class="cartao">
+                <a href="https://www.dio.me/certificate/0B52A874/share" target="_blank"><h3>certificate
+                    Primeiras Páginas Interativas com JavaScript</h3></a>
+                <p>
+                    Bootcamp de angular no site da DIO, sendo patrocinado pelo ifood, no qual ficamos estudando sobre HTML, CSS, Js, Ts e Angular, além de desevolver sites utilizando o framework para incrementarmos nossa experiência de estudos e conhecimento.
+                    
+                </p>
+            </div>
+
+        </section>
+        <!-- Habilidades -->
+        <h3 id="habilidades" class="title">Habilidades</h3>
+        <section class="sesao_pessoal" >
+            <div>
+                <img class="card-imagem" src="https://seeklogo.com/images/H/html5-without-wordmark-color-logo-14D252D878-seeklogo.com.png" alt="logo HTML">
+                <h3>HTML 5</h3>
+            </div>
+            <div>
+                <img class="card-imagem" src="https://seeklogo.com/images/C/css-3-logo-023C1A7171-seeklogo.com.png" alt="logo CSS">
+                <h3>CSS 3</h3>
+            </div>
+            <div>
+                <img class="card-imagem" src="https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png" alt="logo Js">
+                <h3>Javascript</h3>
+            </div>
+            <div>
+                <img class="card-imagem" src="https://seeklogo.com/images/A/angular-icon-logo-9946B9795D-seeklogo.com.png" alt="logo Angular">
+                <h3>Angular</h3>
+            </div>
+            
+        </section>
+        <!-- Projetos pessoais -->
+        <h3 id="projetos" class="title">Projetos pessoais</h3>
+        <section class="sesao_pessoal">
+            <div class="cartao">
+                <a href="https://github.com/doomquest3/desafio---iuul---conversor-de-moedas" target="_blank"><h3>Conversor de moedas</h3></a>
+                <p>
+                    Conversor de moedas criado para a aceleração da IUUL, utilizando o framework Angular para realizar o desenvolvimento do projeto, além de utilizar uso de uma API para realizar a conversão de uma quantidade de uma moeda para um valor monetário desejado.
+                    
+                </p>
+            </div>
+            <div class="cartao">
+                <a href="https://github.com/doomquest3/Marketplace-Front-End" target="_blank"><h3>Marketplace-Front-End</h3></a>
+                <p>
+                    Projeto desenvolvido durante o curso unifap digital 4.0, foi utilizado o framework Next.js para o desenvolvimento do projeto, o projeto utiliza uma API para disponibilizar itens de vendas para ser utilizado como um e-commerce para qualquer empresa.
+                </p>
+            </div>
+            <div class="cartao">
+                <a href="https://github.com/doomquest3/React-native---E-commerce" target="_blank"><h3>E-commerce react-native de moedas</h3></a>
+                <p>
+                    Uma versão do projeto do e-commerce desenvolvido em NextJS, porém utilziando react-native para mobile no qual conta com API para mostrar os itens disponibilizados e que estão em estado de compra pelo consumidor.
+                </p>
+            </div>
+            
+        </section>
+
+        <!-- Perfis em redes sociais -->
+        <footer class="rodape">
+            <div class="area-redeSocial">
+                <p>Podemos trabalhar juntos?</p>
+                <h4>Vamos conversar!</h4>
+                <ul class="redes-lista">
+                    <li class="redes-socias">
+                        <a href="https://github.com/doomquest3" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                    </li>
+                    <li class="redes-socias">
+                        <a href="https://www.linkedin.com/in/leandro-de-jesus-0370b6132/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+                    </li>
+                    <li class="redes-socias">
+                        <a href="https://www.facebook.com/leandro.jesus.50951/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
+                    </li>
+                </ul>
+                <p>@2023 todos os direitos reservados a mim.</p>
+                <p>Design e desenvolvido por <a href="https://www.linkedin.com/in/leandro-de-jesus-0370b6132/" target="_blank">min.</a></p>
+            </div>
+
+            <div class="form-email">
+                <form>
+                    <legend>Envie uma mensagem para o meu email</legend>
+                    <textarea style="color: #262626;"
+                            placeholder="Digite sua mensagem" 
+                            name="" 
+                            id="" 
+                            cols="42" 
+                            rows="8">
+                    </textarea>
+                    <button type="submit" onclick="enviarMensagem()">Enviar</button>
+                </form>
+            </div>
+
+        </footer>
     </main>
     
     
